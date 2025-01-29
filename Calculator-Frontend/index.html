@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <button onclick="memoryClear()" class="memory-btn">MC</button>
+            <button onclick="memoryRecall()" class="memory-btn">MR</button>
+            <button onclick="memoryAdd()" class="memory-btn">M+</button>
+            <button onclick="memorySubtract()" class="memory-btn">M-</button>
+            <button onclick="memoryStore()" class="memory-btn">MS</button>
+            <button onclick="percentage()" class="operator-btn">%</button>
+            <button onclick="clearEntry()" class="operator-btn">CE</button>
+            <button onclick="clearDisplay()" class="operator-btn">C</button>
+            <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+            <button onclick="appendToDisplay('0')" class="zero-btn">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="toggleSign()" class="operator-btn">+/-</button>
+            <button onclick="calculate()" class="equal-btn">=</button>
+            
+            
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/decimal.js/10.4.3/decimal.min.js"></script>
+</body>
+</html>
