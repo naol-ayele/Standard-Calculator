@@ -3,8 +3,6 @@
 
 A simple, responsive, and user-friendly web-based calculator that supports basic arithmetic operations, keyboard input, and memory functions.
 
-Calculator Screenshot
-
  Features
 - Basic Operations: Addition (+), subtraction (-), multiplication (*), and division (/).
 - Memory Functions: Memory Clear (MC), Memory Recall (MR), Memory Add (M+), Memory Subtract (M-), and Memory Store (MS).
@@ -60,10 +58,10 @@ Calculator Screenshot
  File Structure
 standard-calculator/
 │
-├── index.html           Main HTML file for the calculator
-├── style.css            CSS file for styling the calculator
-├── script.js            JavaScript file for calculator logic
-└── README.md            This file
+├── index.html          Main HTML file for the calculator
+├── style.css           CSS file for styling the calculator
+├── script.js           JavaScript file for calculator logic
+└── README.md           This file
 
  Technologies Used
 -HTML: Structure of the calculator.
