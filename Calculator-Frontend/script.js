@@ -62,40 +62,32 @@ function memoryStore() {
     memory = parseFloat(display.value) || 0;
 }
 
-// Function to handle keyboard input
 function handleKeyboardInput(event) {
     const key = event.key;
-
-    // Allow numbers (0-9)
+    
     if (/[0-9]/.test(key)) {
         appendToDisplay(key);
     }
 
-    // Allow operators (+, -, *, /)
     else if (["+", "-", "*", "/"].includes(key)) {
         appendToDisplay(key);
     }
-
-    // Allow decimal point
+        
     else if (key === ".") {
         appendToDisplay(key);
     }
-
-    // Allow Enter key for calculation
+        
     else if (key === "Enter") {
         calculate();
     }
 
-    // Allow Backspace key for clearing the last character
     else if (key === "Backspace") {
         display.value = display.value.slice(0, -1);
     }
 
-    // Allow Escape key for clearing the display
     else if (key === "Escape") {
         clearDisplay();
     }
 }
 
-// Add event listener for keyboard input
 document.addEventListener("keydown", handleKeyboardInput);
